@@ -83,4 +83,7 @@ console.log(numbers) // [10,30,20]
 
 raceResults(['jim', 'jannet', 'hugo', 'eli', 'ally', 'greg']);
 
-const raceResults = ([first, second, third, ...rest]) => ({first, second, third, ...rest})
+const raceResults = ([first, second, third, ...rest]) => ({first, second, third, ...rest});
+
+
+;

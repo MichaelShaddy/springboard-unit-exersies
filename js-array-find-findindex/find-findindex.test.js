@@ -23,7 +23,7 @@ describe("#removeUser", function() {
         { username: "akagen" },
         { username: "msmith" }
       ];
-  })
+  });
   it("removes a user from an array", function() {
     removeUser(users, "mlewis");
     expect(users.length).toEqual(2)
@@ -38,3 +38,4 @@ describe("#removeUser", function() {
 
   });
 });
+
