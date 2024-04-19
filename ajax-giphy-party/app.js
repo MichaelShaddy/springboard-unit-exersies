@@ -12,7 +12,7 @@ function app(){
 
     const searchBar = document.createElement('input');
     searchBar.setAttribute('type', 'text');
-    searchBar.setAttribute('placeholder', 'Type requested Gif genre');
+    searchBar.setAttribute('placeholder', 'Search for a specific Gif...');
     searchBar.setAttribute('id', 'search-bar');
 
     const searchBtn = document.createElement('button');
@@ -44,13 +44,7 @@ function app(){
 
         gifImageContainer.appendChild(newGif);
     }
-
-
-    let inputValue = '';
-
-    function getRandomInt(max) {
-        return Math.floor(Math.random() * max);
-    }
+    const getRandomInt = (max) => (Math.floor(Math.random() * max));
     
     async function getGiphyImage() {
         const inputValue = document.getElementById('search-bar').value;
@@ -62,7 +56,6 @@ function app(){
                     api_key: 'GOf3UG8U012O5dN4uAeXEhaGQjiLkWhv',
                 }
             });
-            console.log(res);
     
             const numGifs = res.data.data.length;
     
